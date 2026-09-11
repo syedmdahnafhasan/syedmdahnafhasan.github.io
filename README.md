@@ -10,13 +10,13 @@ It uses only HTML, CSS, and minimal static assets.
 - `publications.html`: publication list in academic CV style
 - `cv.html`: structured CV (education, experience, awards, skills, interests)
 - `assets/css/style.css`: shared site styling
-- `assets/images/profile-placeholder.png`: profile image placeholder
+- `assets/images/profile.jpg`: profile photo (600px wide)
 
 Contact info (email, GitHub, LinkedIn) lives in the header social icons on every page, not a separate Contact tab.
 
 ## Update Profile Photo
 
-1. Replace `assets/images/profile-placeholder.png` with your own image.
+1. Replace `assets/images/profile.jpg` with your own image (resize to about 600px wide to keep the page fast).
 2. Keep the same filename, or update the image path in `index.html`.
 
 ## Update CV
