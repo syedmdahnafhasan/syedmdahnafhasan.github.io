@@ -9,7 +9,8 @@ It uses only HTML, CSS, and minimal static assets.
 - `projects.html`: full project list
 - `publications.html`: publication list in academic CV style
 - `cv.html`: structured CV (education, experience, awards, skills, interests)
-- `assets/css/style.css`: shared site styling
+- `assets/css/style.css`: shared site styling (light and dark color sets)
+- `assets/js/theme.js`: dark/light toggle button; dark is the default, and the visitor's choice is saved in the browser
 - `assets/images/profile.jpg`: profile photo (600px wide)
 
 Contact info (email, GitHub, LinkedIn) lives in the header social icons on every page, not a separate Contact tab.

@@ -5,6 +5,17 @@
   --accent: #2f5d8a;
   --border: #dde3ea;
   --card: #f8fafc;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #15181c;
+  --text: #e4e7eb;
+  --muted: #9aa5b3;
+  --accent: #7fb1e3;
+  --border: #2c333c;
+  --card: #1c2026;
+  color-scheme: dark;
 }
 
 * {
@@ -60,12 +71,52 @@ a:hover {
 .nav-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 1rem;
 }
 
 .nav-links a {
   color: var(--text);
   font-size: 0.95rem;
+}
+
+.theme-toggle {
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  background: var(--bg);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle .icon-moon,
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+.theme-toggle .icon-sun,
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
 }
 
 main {
@@ -106,7 +157,7 @@ main {
   align-items: center;
   justify-content: center;
   color: var(--text);
-  background: #fff;
+  background: var(--bg);
 }
 
 .social-link:hover {
