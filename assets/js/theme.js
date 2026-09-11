@@ -3,15 +3,25 @@
   var button = document.querySelector(".theme-toggle");
   if (!button) return;
 
+  function currentTheme() {
+    return root.getAttribute("data-theme") === "light" ? "light" : "dark";
+  }
+
   function updateLabel() {
-    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    button.setAttribute("aria-label", "Switch to " + next + " mode");
-    button.setAttribute("title", "Switch to " + next + " mode");
+    var theme = currentTheme();
+    var next = theme === "dark" ? "light" : "dark";
+    var text = (theme === "dark" ? "Dark" : "Light") + " mode (click for " + next + " mode)";
+    button.setAttribute("aria-label", text);
+    button.setAttribute("title", text);
   }
 
   button.addEventListener("click", function () {
-    var theme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    var theme = currentTheme() === "dark" ? "light" : "dark";
+    root.classList.add("theme-transition");
     root.setAttribute("data-theme", theme);
+    window.setTimeout(function () {
+      root.classList.remove("theme-transition");
+    }, 450);
     try {
       localStorage.setItem("theme", theme);
     } catch (e) {}
