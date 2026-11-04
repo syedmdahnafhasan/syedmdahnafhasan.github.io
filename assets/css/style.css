@@ -396,3 +396,7 @@ ul {
   font-size: 0.95rem;
   margin-top: 0.1rem;
 }
+
+.entry .link-row {
+  margin-top: 0.55rem;
+}
