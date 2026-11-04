@@ -363,12 +363,35 @@ ul {
   content: " \00b7  ";
 }
 
-.course-line {
-  margin-top: 0.45rem;
-  color: var(--muted);
+.course-group {
+  margin-top: 0.9rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--border);
 }
 
-.course-code {
+.group-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  margin-bottom: 0.45rem;
+}
+
+.course {
+  margin-bottom: 0.7rem;
+}
+
+.course:last-child {
+  margin-bottom: 0;
+}
+
+.course-name {
   font-weight: 600;
-  color: var(--text);
+  font-size: 1rem;
+}
+
+.course-topics {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 0.1rem;
 }
