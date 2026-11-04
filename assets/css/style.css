@@ -349,3 +349,16 @@ ul {
     max-width: 220px;
   }
 }
+
+.course-list li {
+  margin-bottom: 0.4rem;
+}
+
+.course-platform {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.course-platform::before {
+  content: " \00b7  ";
+}
