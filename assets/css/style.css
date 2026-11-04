@@ -363,20 +363,12 @@ ul {
   content: " \00b7  ";
 }
 
-.course-block {
-  margin-top: 0.7rem;
+.course-line {
+  margin-top: 0.45rem;
+  color: var(--muted);
 }
 
 .course-code {
   font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.topic-list {
-  margin-top: 0.15rem;
-  color: var(--muted);
-}
-
-.topic-list li {
-  margin-bottom: 0.12rem;
+  color: var(--text);
 }
