@@ -8,6 +8,7 @@ It uses only HTML, CSS, and minimal static assets.
 - `index.html`: home page with bio, research interests, and selected publications
 - `projects.html`: full project list (hidden from the menu for now; uncomment the Projects link in each page's `<nav>` to show it again)
 - `publications.html`: publication list in academic CV style
+- `teaching.html`: teaching experience, newest role first
 - `cv.html`: structured CV (education, experience, awards, skills, interests)
 - `assets/css/style.css`: shared site styling (light and dark color sets)
 - `assets/js/theme.js`: dark/light toggle button; dark is the default, and the visitor's choice is saved in the browser
